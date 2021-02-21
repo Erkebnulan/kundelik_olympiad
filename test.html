@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="test-wrapper">
+    <div class="container">
+        <div class="testPage">
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#">
+                        <i class="icon arrow-left"></i>
+                        <span>Олимпияда</span>
+                    </a>
+                </li>
+                <li>
+                    <span>ІV Республикалық «Үздік сынып жетекші» олимпиадасы (1-кезең)</span>
+                </li>
+            </ul>
+            <h1>Үздік сынып жетекші» олимпиадасы (1-кезең)</h1>
+            <div class="testPage-content">
+                <div class="testBox">
+                    <div class="testBox-body">
+                        <h6>Вопросы</h6>
+                        <ul class="testNumber-list">
+                            <li class="active">
+                                <a class="test-number" href="#">1</a>
+                            </li>
+                            <li>
+                                <a class="test-number" href="#">2</a>
+                            </li>
+                            <li>
+                                <a class="test-number" href="#">3</a>
+                            </li>
+                            <li>
+                                <a class="test-number" href="#">4</a>
+                            </li>
+                            <li>
+                                <a class="test-number" href="#">5</a>
+                            </li>
+                            <li>
+                                <a class="test-number" href="#">6</a>
+                            </li>
+                            <li>
+                                <a class="test-number" href="#">7</a>
+                            </li>
+                            <li>
+                                <a class="test-number" href="#">8</a>
+                            </li>
+                            <li>
+                                <a class="test-number" href="#">9</a>
+                            </li>
+                            <li>
+                                <a class="test-number" href="#">10</a>
+                            </li>
+                            <li>
+                                <a class="test-number" href="#">11</a>
+                            </li>
+                            <li>
+                                <a class="test-number" href="#">12</a>
+                            </li>
+                            <li>
+                                <a class="test-number" href="#">13</a>
+                            </li>
+                            <li>
+                                <a class="test-number" href="#">14</a>
+                            </li>
+                            <li>
+                                <a class="test-number" href="#">15</a>
+                            </li>
+                            <li>
+                                <a class="test-number" href="#">16</a>
+                            </li>
+                            <li>
+                                <a class="test-number" href="#">17</a>
+                            </li>
+                            <li>
+                                <a class="test-number" href="#">18</a>
+                            </li>
+                        </ul>
+                        <div class="testDetail">
+                            <p>log216 + log927</p>
+                            <div class="answers">
+                                <label class="radio-container">
+                                    5
+                                    <input type="radio" name="anwer">
+                                    <span class="checkmark">
+                                        <i class="icon check-mark-mini"></i>
+                                    </span>
+                                </label>
+                                <label class="radio-container">
+                                    3
+                                    <input type="radio" name="anwer">
+                                    <span class="checkmark">
+                                        <i class="icon check-mark-mini"></i>
+                                    </span>
+                                </label>
+                                <label class="radio-container">
+                                    5.5
+                                    <input type="radio" name="anwer">
+                                    <span class="checkmark">
+                                        <i class="icon check-mark-mini"></i>
+                                    </span>
+                                </label>
+                                <label class="radio-container">
+                                    2
+                                    <input type="radio" name="anwer">
+                                    <span class="checkmark">
+                                        <i class="icon check-mark-mini"></i>
+                                    </span>
+                                </label>
+                                <label class="radio-container">
+                                    6.5
+                                    <input type="radio" name="anwer">
+                                    <span class="checkmark">
+                                        <i class="icon check-mark-mini"></i>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testBox-bottom">
+                        <button class="btn-plain btn-main">Закончить тестирование</button>
+                    </div>
+                </div>
+                <div class="testTime">
+                    <button class="btn-plain testTime-btn">
+                        <i class="icon"></i>
+                    </button>
+                    <div class="testTime-caption">
+                        <p>2:19</p>
+                        <span>Осталось времени</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--появляется при клике на кнопку "Закончить тест"-->
+<div class="modal test-modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h6>Вы не ответили на 3 вопроса</h6>
+            <button class="btn-plain modal-close">
+                <i class="icon close-grey"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p>Почти во всех исследованиях есть критерии участников, по которым мы точно определяем подходящих респондентов. Без них мы не сможем найти подходящие опросы.</p>
+            <button class="btn-plain btn-main">Хорошо, я понял</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/libs.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+    //test number list
+    $('.test-number').click(function (){
+        $('.test-number').closest('li').removeClass('active');
+        $(this).closest('li').addClass('active');
+    })
+
+    //modal
+    $('.testBox-bottom').find('.btn-main').click(function (){
+        $('.test-modal').modal('show');
+    })
+</script>
+</body>
+</html>
